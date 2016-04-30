@@ -16,34 +16,34 @@ let identifier = "beacon.identifier"
 class ViewController: UIViewController, CBPeripheralManagerDelegate {
 
 	var peripheralManager: CBPeripheralManager?
-	var beaconRegion = CLBeaconRegion(proximityUUID: uuid, major: 2, minor: 1, identifier: identifier)
+	var beaconRegion = CLBeaconRegion(proximityUUID: uuid!, major: 2, minor: 1, identifier: identifier)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		peripheralManager = CBPeripheralManager(delegate: self, queue: dispatch_get_main_queue())
 
-		var timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "changeRegion", userInfo: nil, repeats: true)
+        let _ = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: #selector(self.changeRegion), userInfo: nil, repeats: true)
 	}
 
 	//MARK: CBPeripheralDelegate
-	func peripheralManagerDidUpdateState(peripheral: CBPeripheralManager!) {
+	func peripheralManagerDidUpdateState(peripheral: CBPeripheralManager) {
 		switch (peripheral.state) {
 			case .PoweredOn:
-				var peripheralData = beaconRegion.peripheralDataWithMeasuredPower(-59)
+                let peripheralData = NSDictionary(dictionary: beaconRegion.peripheralDataWithMeasuredPower(-59)) as? [String : AnyObject]
 				peripheralManager!.startAdvertising(peripheralData)
 			default:
 				break
 		}
 	}
 
-	func peripheralManagerDidStartAdvertising(peripheral: CBPeripheralManager!, error: NSError!) {
-		println("Peripheral started with error: \(error?.localizedDescription)")
+	func peripheralManagerDidStartAdvertising(peripheral: CBPeripheralManager, error: NSError?) {
+		print("Peripheral started with error: \(error?.localizedDescription)")
 	}
 
 	func changeRegion() {
-		var nextMajor = Int(beaconRegion.major) + 2 as UInt16
-		var nextMinor = Int(beaconRegion.major) + 1 as UInt16
-		beaconRegion = CLBeaconRegion(proximityUUID: uuid, major: nextMajor, minor: nextMinor, identifier: identifier)
+		let nextMajor = UInt16(Int(beaconRegion.major!) + Int(2))
+		let nextMinor = UInt16(Int(beaconRegion.major!) + Int(1))
+		beaconRegion = CLBeaconRegion(proximityUUID: uuid!, major: nextMajor, minor: nextMinor, identifier: identifier)
 	}
 
 }

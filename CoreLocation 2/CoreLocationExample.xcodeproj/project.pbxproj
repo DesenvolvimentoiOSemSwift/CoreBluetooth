@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D3F2EC2E19C08A4B00727A35 /* CoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F2EC2E19C08A4B00727A35 /* CoreLocationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F2EC3219C08A4B00727A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3F2EC3319C08A4B00727A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3F2EC3519C08A4B00727A35 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		D3F2EC3A19C08A4B00727A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3F2EC3C19C08A4B00727A35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3F2EC3F19C08A4B00727A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D3F2EC4519C08A4B00727A35 /* CoreLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F2EC4519C08A4B00727A35 /* CoreLocationExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F2EC4A19C08A4B00727A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3F2EC4B19C08A4B00727A35 /* CoreLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +61,7 @@
 		D3F2EC2519C08A4B00727A35 = {
 			isa = PBXGroup;
 			children = (
-				D3F2EC3019C08A4B00727A35 /* CoreLocation */,
+				D3F2EC3019C08A4B00727A35 /* CoreLocationExample */,
 				D3F2EC4819C08A4B00727A35 /* CoreLocationTests */,
 				D3F2EC2F19C08A4B00727A35 /* Products */,
 			);
@@ -70,13 +70,13 @@
 		D3F2EC2F19C08A4B00727A35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3F2EC2E19C08A4B00727A35 /* CoreLocation.app */,
-				D3F2EC4519C08A4B00727A35 /* CoreLocationTests.xctest */,
+				D3F2EC2E19C08A4B00727A35 /* CoreLocationExample.app */,
+				D3F2EC4519C08A4B00727A35 /* CoreLocationExample.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D3F2EC3019C08A4B00727A35 /* CoreLocation */ = {
+		D3F2EC3019C08A4B00727A35 /* CoreLocationExample */ = {
 			isa = PBXGroup;
 			children = (
 				D3F2EC3319C08A4B00727A35 /* AppDelegate.swift */,
@@ -87,6 +87,7 @@
 				D3F2EC3E19C08A4B00727A35 /* LaunchScreen.xib */,
 				D3F2EC3119C08A4B00727A35 /* Supporting Files */,
 			);
+			name = CoreLocationExample;
 			path = CoreLocation;
 			sourceTree = "<group>";
 		};
@@ -118,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3F2EC2D19C08A4B00727A35 /* CoreLocation */ = {
+		D3F2EC2D19C08A4B00727A35 /* CoreLocationExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3F2EC4F19C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocation" */;
+			buildConfigurationList = D3F2EC4F19C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocationExample" */;
 			buildPhases = (
 				D3F2EC2A19C08A4B00727A35 /* Sources */,
 				D3F2EC2B19C08A4B00727A35 /* Frameworks */,
@@ -130,14 +131,14 @@
 			);
 			dependencies = (
 			);
-			name = CoreLocation;
+			name = CoreLocationExample;
 			productName = CoreLocation;
-			productReference = D3F2EC2E19C08A4B00727A35 /* CoreLocation.app */;
+			productReference = D3F2EC2E19C08A4B00727A35 /* CoreLocationExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D3F2EC4419C08A4B00727A35 /* CoreLocationTests */ = {
+		D3F2EC4419C08A4B00727A35 /* CoreLocationExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3F2EC5219C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocationTests" */;
+			buildConfigurationList = D3F2EC5219C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocationExampleTests" */;
 			buildPhases = (
 				D3F2EC4119C08A4B00727A35 /* Sources */,
 				D3F2EC4219C08A4B00727A35 /* Frameworks */,
@@ -148,9 +149,9 @@
 			dependencies = (
 				D3F2EC4719C08A4B00727A35 /* PBXTargetDependency */,
 			);
-			name = CoreLocationTests;
+			name = CoreLocationExampleTests;
 			productName = CoreLocationTests;
-			productReference = D3F2EC4519C08A4B00727A35 /* CoreLocationTests.xctest */;
+			productReference = D3F2EC4519C08A4B00727A35 /* CoreLocationExample.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +160,9 @@
 		D3F2EC2619C08A4B00727A35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = zaquia;
 				TargetAttributes = {
 					D3F2EC2D19C08A4B00727A35 = {
@@ -171,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D3F2EC2919C08A4B00727A35 /* Build configuration list for PBXProject "CoreLocation" */;
+			buildConfigurationList = D3F2EC2919C08A4B00727A35 /* Build configuration list for PBXProject "CoreLocationExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +187,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3F2EC2D19C08A4B00727A35 /* CoreLocation */,
-				D3F2EC4419C08A4B00727A35 /* CoreLocationTests */,
+				D3F2EC2D19C08A4B00727A35 /* CoreLocationExample */,
+				D3F2EC4419C08A4B00727A35 /* CoreLocationExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,7 +237,7 @@
 /* Begin PBXTargetDependency section */
 		D3F2EC4719C08A4B00727A35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D3F2EC2D19C08A4B00727A35 /* CoreLocation */;
+			target = D3F2EC2D19C08A4B00727A35 /* CoreLocationExample */;
 			targetProxy = D3F2EC4619C08A4B00727A35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -279,6 +282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -342,7 +346,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "zaquia.mauricio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CoreLocationExample;
 			};
 			name = Debug;
 		};
@@ -352,7 +357,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "zaquia.mauricio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CoreLocationExample;
 			};
 			name = Release;
 		};
@@ -370,8 +376,9 @@
 				);
 				INFOPLIST_FILE = CoreLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLocation.app/CoreLocation";
+				PRODUCT_BUNDLE_IDENTIFIER = "zaquia.mauricio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CoreLocationExample;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLocationExample.app/CoreLocationExample";
 			};
 			name = Debug;
 		};
@@ -385,15 +392,16 @@
 				);
 				INFOPLIST_FILE = CoreLocationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLocation.app/CoreLocation";
+				PRODUCT_BUNDLE_IDENTIFIER = "zaquia.mauricio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CoreLocationExample;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLocationExample.app/CoreLocationExample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D3F2EC2919C08A4B00727A35 /* Build configuration list for PBXProject "CoreLocation" */ = {
+		D3F2EC2919C08A4B00727A35 /* Build configuration list for PBXProject "CoreLocationExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3F2EC4D19C08A4B00727A35 /* Debug */,
@@ -402,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3F2EC4F19C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocation" */ = {
+		D3F2EC4F19C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocationExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3F2EC5019C08A4B00727A35 /* Debug */,
@@ -411,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3F2EC5219C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocationTests" */ = {
+		D3F2EC5219C08A4B00727A35 /* Build configuration list for PBXNativeTarget "CoreLocationExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3F2EC5319C08A4B00727A35 /* Debug */,

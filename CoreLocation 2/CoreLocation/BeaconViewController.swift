@@ -17,7 +17,7 @@ class BeaconViewController: UIViewController , UITableViewDataSource , CLLocatio
 	@IBOutlet weak var tableView: UITableView!
 	var beaconsFound: [CLBeacon] = [CLBeacon]()
 	let locationManager = CLLocationManager()
-	var beaconRegion = CLBeaconRegion(proximityUUID: uuid, identifier: identifier)
+	var beaconRegion = CLBeaconRegion(proximityUUID: uuid!, identifier: identifier)
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -49,9 +49,9 @@ class BeaconViewController: UIViewController , UITableViewDataSource , CLLocatio
 		let identifier = "BeaconCell"
 		let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as UITableViewCell
 
-		let majorLabel = cell.viewWithTag(1) as UILabel
-		let minorLabel = cell.viewWithTag(2) as UILabel
-		let distanceLabel = cell.viewWithTag(3) as UILabel
+		let majorLabel = cell.viewWithTag(1) as! UILabel
+		let minorLabel = cell.viewWithTag(2) as! UILabel
+		let distanceLabel = cell.viewWithTag(3) as! UILabel
 
 		let beacon = beaconsFound[indexPath.row]
 		majorLabel.text = String(format: "%ld", arguments: [beacon.major.integerValue])
@@ -70,15 +70,15 @@ class BeaconViewController: UIViewController , UITableViewDataSource , CLLocatio
 		return cell
 	}
 
-	func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
-		locationManager.startRangingBeaconsInRegion(region as CLBeaconRegion)
+	func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+		locationManager.startRangingBeaconsInRegion(region as! CLBeaconRegion)
 	}
 
-	func locationManager(manager: CLLocationManager!, didExitRegion region: CLRegion!) {
-		locationManager.stopRangingBeaconsInRegion(region as CLBeaconRegion)
+	func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+		locationManager.stopRangingBeaconsInRegion(region as! CLBeaconRegion)
 	}
 
-	func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+	func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
 
 		if (beacons.count > 0) {
 			beaconsFound = beacons as [CLBeacon]
